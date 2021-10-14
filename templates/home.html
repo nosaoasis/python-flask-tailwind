@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1 class="text-blue-700 text-3xl">Hello from Home Page</h1>
+{% for post in posts %}
+<h1>{{ post.title }}</h1>
+<p>{{ post.content }}</p>
+<p><b>Authour</b> - {{ post.authour }} || <span> Published - {{ post.date_posted }}</span> </p>
+{% endfor %}
+{% endblock content %}
